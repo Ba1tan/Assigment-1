@@ -19,9 +19,9 @@ public class MyApplication
             //adding point to the shape
             shape.addPoint(point);
         }
-        // perimeter of shape
-        System.out.println(shape.perimeter());
-        //method that outputs the array for checking
-        System.out.print(shape.longestSide());
+        //Shape methods
+        System.out.println("Perimeter: " + shape.perimeter());
+        System.out.println("Longest side: " + shape.longestSide());
+        System.out.print("Average side: " + shape.averageSide());
     }
 }

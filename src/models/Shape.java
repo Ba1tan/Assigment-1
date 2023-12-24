@@ -56,5 +56,9 @@ public class Shape
         }
         return longest;
     }
+    public double averageSide()
+    {
+        return perimeter() / points.size();
+    }
 }
 
