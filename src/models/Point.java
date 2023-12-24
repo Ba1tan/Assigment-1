@@ -9,7 +9,6 @@ public class Point {
         this.x = x;
         this.y = y;
     }
-
     public double getX() {
         return x;
     }
@@ -18,10 +17,10 @@ public class Point {
         return y;
     }
 
-    public double distance(Point dest)
-    {
 
-        return 0;
+    public double distance(Point dest) // Calculate the distance between current and next points
+    {
+        return Math.sqrt(Math.pow(this.x - dest.x, 2) + Math.pow(this.y - dest.y, 2));
     }
 
 }
