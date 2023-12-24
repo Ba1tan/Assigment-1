@@ -30,14 +30,31 @@ public class Shape
         }
         return result;
     }
-    public void showArray() //shows points that every point consists
+    public double longestSide() //determines which side is longest
     {
-        int size = points.size();
-        for(int i = 0; i < size; i++)
+        double longest = 0;
+        double current = 0;
+        for(int i = 0; i < points.size(); i++)
         {
-            System.out.print(points.get(i).getX() + " ");
-            System.out.println(points.get(i).getY());
+            Point currentPoint;
+            Point nextPoint;
+            if(i == points.size() - 1)
+            {
+                currentPoint = points.get(i);
+                nextPoint = points.get(1);
+            }
+            else
+            {
+                currentPoint = points.get(i);
+                nextPoint = points.get(i + 1);
+            }
+            current = currentPoint.distance(nextPoint);
+            if(current > longest) // comparing current with last longest
+            {
+                longest = current;
+            }
         }
+        return longest;
     }
 }
 
