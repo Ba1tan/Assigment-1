@@ -19,7 +19,7 @@ public class Shape
             if(i == size - 1) // checks that iterator reached the last Point to close the shape
             {
                 currentPoint = points.get(i);
-                nextPoint = points.get(1);
+                nextPoint = points.getFirst();
             }
             else
             {
@@ -41,7 +41,7 @@ public class Shape
             if(i == points.size() - 1)
             {
                 currentPoint = points.get(i);
-                nextPoint = points.get(1);
+                nextPoint = points.getFirst();
             }
             else
             {

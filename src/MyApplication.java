@@ -18,10 +18,11 @@ public class MyApplication
             Point point = new Point(sc.nextDouble(), sc.nextDouble());
             //adding point to the shape
             shape.addPoint(point);
+            System.out.println(point.toString());
         }
         //Shape methods
         System.out.println("Perimeter: " + shape.perimeter());
         System.out.println("Longest side: " + shape.longestSide());
-        System.out.print("Average side: " + shape.averageSide());
+        System.out.println("Average side: " + shape.averageSide());
     }
 }
